@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Romeo Portfolio</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <script src="https://kit.fontawesome.com/ab375ae48a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="color.css"> 
+</head>
+<body>
+  
+  <video autoplay muted loop playsinline id="bg-video" class="position-fixed w-100 h-100 object-fit-cover z-n1">
+    <source src="IMG/haduvi.mp4" type="video/mp4" />
+    <img src="IMG/brand.gif" alt="Background GIF" class="position-fixed w-100 h-100 object-fit-cover z-n1" />
+  </video>
+  
+  <header class="main-header">
+    <nav class="navbar header-nav navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="IMG/brand.gif" alt="Logo" class="logo me-2" data-aos="flip-left" data-aos-duration="2000" />
+        </a>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#Services" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="#Portfolio" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+
+          </ul>
+        </div>
+
+        <div class="ms-auto d-none d-lg-block">
+          <a class="colored-btn" href="#Contact">Contact Me</a>
+        </div>
+
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home-section bg-gray">
+      <div class="container">
+        <div class="anim-elements">
+          <div class="anim-element"><i class="bx bxl-html5"></i></div>
+          <div class="anim-element"><i class="bx bxl-apple"></i></div>
+          <div class="anim-element"><i class="bx bxl-css3"></i></div>
+          <div class="anim-element"><i class="bx bxl-react"></i></div>
+          <div class="anim-element"><i class="bx bxl-android"></i></div>
+          <div class="anim-element"><i class="fa-solid fa-dumbbell"></i></div>
+        </div>
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-6">
+            <div class="home-intro text-center text-lg-start">
+              <h6>Hi I'm Romeo Paolo L. Tolentino</h6>
+              <h2>I'm a <span id="type-it"></span> Information Technology</h2>
+              <h1>and an <span id="type-it-2"></span> & Advanced Networking Specialist</h1>              
+              <p>Based in the <i class="Rpt">Philippines</i></p>
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="home-image text-center">
+              <img src="IMG/back.jpg" alt="About Image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="IMG/BBackground.jfif" alt="About Image">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a 2026 graduate of National University – Lipa, where I earned my Bachelor's degree in Information Technology with a focus on Application and Web Development. Throughout my academic journey, I gained hands-on experience in designing and developing innovative software solutions, including web applications, mobile apps, and enterprise-level systems.
+            </p>
+            
+            <div class="tab-title" data-aos="flip-left">                
+              <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+              <p class="tab-links" onclick="opentab(event, 'Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab(event, 'Education')">More...</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li data-aos="zoom-in-up"><span>Networking</span><br>Designing and Configuring Networks for Optimal Performance. Our expertise includes setting up secure, scalable, and high-speed networks, ensuring reliability and seamless communication for businesses of all sizes.</li>
+                <li data-aos="zoom-in-up"><span>Web Development</span><br>Creating Responsive and Dynamic Websites with User-Centered Design. We specialize in building modern, mobile-friendly websites that provide a great user experience and help businesses establish a strong online presence.</li>
+                <li data-aos="zoom-in-up"><span>App Development</span><br>Building iOS and Android Applications to Elevate User Engagement. We develop intuitive, feature-rich apps that are optimized for performance, delivering seamless experiences across all devices.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li data-aos="zoom-out-down"><span>Networking (2027)</span><br>Designed and configured a campus-wide network using Cisco Packet Tracer, ensuring optimal connectivity, security, and scalability for multiple departments and buildings, while integrating advanced features like VLANs, routing protocols, and network security measures.</li>
+                <li data-aos="zoom-out-down"><span>Web Development (2028)</span><br>Developed a responsive e-commerce site using HTML, CSS, JavaScript, and PHP, focusing on a seamless user experience, secure payment integration, and efficient product management for both users and administrators.</li>
+                <li data-aos="zoom-out-down"><span>App Development (2028)</span><br>Built a grocery management app using Java (Android) and Firebase, providing features for item tracking, grocery lists, and real-time sync between users' devices. Integrated Firebase for real-time database updates, user authentication, and cloud storage.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>BSIT – Networking Focus (2027)</span><br>Capstone: Enterprise Network Design, where I developed a comprehensive network architecture for a large-scale business, focusing on scalability, security, and efficient data flow across multiple departments and locations.</li>
+                <li><span>Web Development Project (2027)</span><br>Created a Student Portal for Grade Tracking, offering an intuitive user interface that allows students and instructors to track academic performance, assignments, and grades in real-time with enhanced security features.</li>
+                <li><span>Mobile App Project (2028)</span><br>Developed a Study Schedule Manager App, designed to help students organize their study sessions, set reminders, and track progress, optimizing their time management and boosting productivity.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Services">
+      <div class="container">
+        <h1 class="sub-title" data-aos="fade-down-left">Services</h1>
+        <div class="service-lists">
+          <div class="wow" data-aos="flip-up">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>Creating dynamic and responsive websites using HTML, CSS, JavaScript, and PHP. I focus on delivering modern user experiences (UX) by integrating clean code, intuitive interfaces, and responsive layouts that work seamlessly across all devices. From e-commerce platforms to personal portfolios, my web development projects are designed to meet the needs of both users and businesses, ensuring functionality, speed, and accessibility.</p>
+            <a href="#">Learn More</a>
+          </div>
+          
+          <div data-aos="flip-up">
+            <i class="fa-brands fa-sketch"></i>
+            <h2>Mobile App Development</h2>
+            <p>Building intuitive and high-performance mobile apps using Java, Kotlin, and Flutter for both Android and iOS platforms. I focus on creating seamless user experiences, ensuring that the apps are not only visually appealing but also efficient and responsive. Whether developing native Android apps with Java and Kotlin or cross-platform apps with Flutter, I ensure that each app is optimized for performance, scalability, and ease of use, meeting the unique needs of users and businesses.</p>
+            <a href="#">Learn More</a>
+          </div>
+          
+          <div data-aos="flip-up">
+            <i class="fa-solid fa-network-wired"></i>
+            <h2>Networking</h2>
+            <p>Designing and configuring secure, scalable, and efficient networks using Cisco technologies. I specialize in setting up enterprise-level network infrastructures, including routers, switches, and firewalls, while ensuring optimal performance, reliability, and security. My expertise extends to implementing VLANs, routing protocols, and network security measures, providing businesses with the robust network solutions they need to stay connected and secure in an increasingly digital world.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="Portfolio">
+      <div class="container">
+        <h1 class="sub-title" data-aos="flip-left">MY WORK</h1>
+        <div class="work-lists">
+          <div class="work" data-aos="fade-right">
+            <img src="IMG/port1.png" alt="Notiflow">
+            <div class="layer">
+              <h3>Notiflow</h3>
+              <p>Multifunctional app with task reminder and timer.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work" data-aos="flip-left">
+            <img src="IMG/port2.jpg" alt="Physique">
+            <div class="layer">
+              <h3>Physique</h3>
+              <p>Documenting my fitness transformation journey.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work" data-aos="fade-right">
+            <img src="IMG/port3.png" alt="Unitflow">
+            <div class="layer">
+              <h3>Unitflow</h3>
+              <p>Smart housing app for better home searching.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn" data-aos="flip-up">See More</a>
+      </div>
+    </section>
+
+
+
+
+    <section id="education">
+      <div class="container">
+        <h1 class="sub-title" data-aos="flip-left">EDUCATION</h1>
+        <div class="work-lists">
+    
+          <div class="work" data-aos="flip-left">
+            <img src="IMG/LIPA.png" alt="National University Lipa">
+            <div class="layer">
+              <h3>National University – Lipa</h3>
+              <p>Bachelor of Science in Information Technology</p>
+              <p>Graduated: 2027 – Lipa City, Batangas</p>
+              <p><strong>Dean's List</strong></p> 
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          
+          <!-- De La Salle Lipa -->
+          <div class="work" data-aos="fade-right">
+            <img src="IMG/lasale.png" alt="De La Salle Lipa">
+            <div class="layer">
+              <h3>De La Salle Lipa</h3>
+              <p>Senior High School Graduate – ABM Strand</p>
+              <p><strong>Graduated with High Honors, 2022</strong></p> <!-- Made it bold using <strong> -->
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          
+    
+          <!-- Inosbulan National High School -->
+          <div class="work" data-aos="fade-left">
+            <img src="IMG/inos.jfif" alt="Inosbulan National High School">
+            <div class="layer">
+              <h3>Inosbulan National High School</h3>
+              <p>Junior High School Graduate</p>
+              <p>Graduated: 2020</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+    
+<section id="Contact" class="py-5">
+      <div class="container">
+        <div class="row" data-aos="fade-down">
+          <div class="col-md-6 contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> contact@romsptolenton.com</p>
+            <p><i class="fa-solid fa-phone"></i> 09157758079</p>
+            <div class="social-icons">
+              <a href="https://www.messenger.com/"><i class="fa-brands fa-facebook-messenger"></i></a>
+              <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="IMG/CV.pdf" download class="btn btn2" data-aos="zoom-in-right">Download CV</a>
+          </div>
+          <div class="col-md-6 contact-right">
+            <form action="submit_form.php" method="POST">
+              <input type="text" name="Name" placeholder="Name" required>
+              <input type="email" name="Email" placeholder="Email" required>
+              <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+              <button type="submit" class="btn btn2" data-aos="zoom-out-up">Send</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="copyright">
+      <p>© 2025 Romeo Paolo L. Tolentino. All Rights Reserved LIFT IT.</p>
+    </div>
+
+  </main>
+  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+  
+  <script>
+   
+  </script>
+</body>
+</html>
+
